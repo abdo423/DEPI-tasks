@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../img/als-dnk.jpg") no-repeat center center/cover;
+
+  /* overflow: hidden; */
+}
+#overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* margin-top: 50px; */
+
+  height: 70vh;
+}
+.container::after {
+  content: "➜";
+  position: absolute;
+  color: #fff;
+  background-color: blueviolet;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  top: 50%;
+  left: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container::before {
+  content: "➜";
+  position: absolute;
+  color: #fff;
+  background-color: blueviolet;
+  height: 50px;
+  width: 50px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  right: 80%;
+  transform: rotate(180deg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+}
+.cards-wrapper {
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  text-align: start;
+
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  margin: 10px;
+}
+.card::after {
+  content: "08:00 am - 10:00 am";
+  position: absolute;
+  width: 140px;
+  height: 30px;
+  top: 350px;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  background-color: seagreen;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.title {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+.card img {
+  width: max-content;
+  position: relative;
+}
+.card h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  width: 240px;
+  padding-left: 10px;
+}
+.item1 p,
+.item2 p,
+.item3 p {
+  font-size: 14px;
+  text-align: start;
+  width: 250px;
+  margin: 10px 0;
+}
+.item1 p {
+  padding: 5px 5px 30px 10px;
+}
+.item2 p {
+  padding: 5px 5px 30px 10px;
+}
+.item3 p {
+  padding: 10px 5px 10px 10px;
+}
+.details {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #333;
+  padding-left: 10px;
+}
+.details p {
+  width: 120px;
+  padding: 0;
+}
+.details p:nth-child(2) {
+  text-align: end;
+}
