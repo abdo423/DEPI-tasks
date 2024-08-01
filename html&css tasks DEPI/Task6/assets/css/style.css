@@ -5,7 +5,6 @@
 }
 body {
   background: url("../img/als-dnk.jpg") no-repeat center center/cover;
-
   /* overflow: hidden; */
 }
 #overlay {
@@ -24,7 +23,6 @@ body {
   align-items: center;
   position: relative;
   /* margin-top: 50px; */
-
   height: 70vh;
 }
 .container::after {
@@ -38,7 +36,6 @@ body {
   font-size: 40px;
   top: 50%;
   left: 80%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,21 +71,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-
   text-align: start;
-
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: 0.4s;
   margin: 10px;
+  position: relative; /* Add this */
 }
 .card::after {
   content: "08:00 am - 10:00 am";
   position: absolute;
   width: 140px;
   height: 30px;
-  top: 350px;
-  left: 52%;
+  top: 162px;
+  left: 58%;
   transform: translate(-50%, -50%);
   background-color: seagreen;
   border-top-right-radius: 10px;
@@ -99,6 +95,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 5px;
+  z-index: 1;
 }
 .title {
   font-size: 50px;
