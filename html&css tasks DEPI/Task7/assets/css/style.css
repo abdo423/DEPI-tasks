@@ -64,7 +64,7 @@ section > div:first-child {
   text-align: center;
   margin: 0;
 }
-.card::before {
+.cards-container .card:nth-of-type(1)::before  {
   content: "";
   background-image: url("https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg");
   background-repeat: no-repeat;
@@ -82,6 +82,25 @@ section > div:first-child {
   height: 80px;
   z-index: 1;
 }
+.cards-container .card:nth-of-type(2)::before  {
+    content: "";
+    background-image: url("../img/portrait-attractive-cheerful-dreamy-guy-600nw-2002775051.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 0px;
+    left: 50%;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the image horizontally */
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+  }
 .card::after {
   content: "“";
   color: #e20c0c;
