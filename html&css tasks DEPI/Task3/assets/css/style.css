@@ -1,44 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 #main-section {
   display: grid;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
+  column-gap: 20px;
   height: 100vh;
-  background-color: #fff;
-  margin: 0 auto;
-  width: 95%;
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  color: #333;
 }
-#main-section .card {
-  background-color: #fff;
+.card {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgb(103, 66, 202) 100%);
   padding: 20px;
-  border: 1px solid #e0e0e0;
-
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  gap: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 0px 15px 0px 15px;
 }
-#main-section h3 {
-  font-size: 4rem;
-  color: #1e1e1e;
+.flex-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: start;
+  position: relative;
+  padding: 10px;
+}
+.flex-card p{
+  font-family: "Londrina Outline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5em; 
+}
+.flex-card i {
+  transform: translateY(30px);
+  margin-bottom: 20px;
+}
+p {
   margin: 0;
+  line-height: 3rem;
+  font-size: 1em;
 }
-#main-section p {
-  font-size: 1rem;
-  color: #666;
-  text-transform: uppercase;
+h3 {
+  font-size: 1.25em;
+  font-weight: 600;
 }
-#main-section i {
-  text-decoration: none;
-  color: #c66b7b;
-  font-size: 3rem;
-  margin: 10px 10px 0 0;
-}
-.card div {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  align-items: start;
+.card i {
+  font-size: 2em;
+  color: #fff;
 }

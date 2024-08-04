@@ -1,52 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
 #main-section {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
+ 
   height: 100vh;
   background-color: #f1f1f1;
-  font-family: Arial, sans-serif;
-  font-size: 1.5em;
-  color: #333;
+  margin: 0 auto;
+  gap: 40px;
 }
-.card {
-  background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgb(103, 66, 202) 100%);
-  padding: 20px;
-  border-radius: 10px;
-  color: #fff;
-  margin: 0px 15px 0px 15px;
+.item1 {
+  grid-area: 1 / 1 / 2 / 2;
 }
-.flex-card {
+.item1 span {
+  color: #fdc236;
+}
+.item1 h1 {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  position: relative;;
+}
+.item1 h1:before {
+  content: "";
+  background: #fdc236;
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  bottom: -22px;
+  left: 5%;
+  margin-left: -40px;
+}
+.item1 h4{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+  margin-bottom: 0px;
+  
+  letter-spacing: 2px;
+}
+.item1 p{
+  font-size: 14px;
+ letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+}
+.item1 p {
+  width: 850px;
+}
+.item1 i{
+  color: white;
+  background-color: #fdc236;
+  font-size: 12.5px;
+  padding: 2.5px;
+  border-radius: 50%;
+}
+.item2 {
+  grid-area: 1 / 2 / 2 /  3;
+  position: relative; 
+}
+.item2 img{
+position: relative;
+z-index: 1;
+
+}
+.item2::after {
+  top: 52%;
+  left: 52%;
+  content: "";
+  position: absolute;
+  width: 422px;
+  height: 513px;
+  
+ z-index: 0;
+ 
+ 
+  transform: translate(-50%, -50%);
+  
+  background-color: #fdc236;
+
+
+}
+.section-content{
+  display: grid;
+  grid-template-columns: 400px 400px;
+}
+.flex-section{
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  align-items: start;
-  position: relative;
-  padding: 10px;
-}
-.flex-card p{
-  font-family: "Londrina Outline", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.5em; 
-}
-.flex-card i {
-  transform: translateY(30px);
-  margin-bottom: 20px;
-}
-p {
-  margin: 0;
-  line-height: 3rem;
-  font-size: 1em;
-}
-h3 {
-  font-size: 1.25em;
-  font-weight: 600;
-}
-.card i {
-  font-size: 2em;
-  color: #fff;
+  align-items: center;
+  gap: 10px ;
+} 
+button{
+  background-color: #fdc236;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+ font-weight: bold;
+ margin: 10px 0;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
