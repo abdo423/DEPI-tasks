@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+section > div:first-of-type > p {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #ff3838;
+  position: relative;
+  font-size: 1rem;
+}
+section > div:first-of-type > p:after {
+  content: "";
+  display: inline-block;
+
+  width: 50px;
+  height: 2.5px;
+  background-color: #ff3838;
+  margin: 5px 0 5px 10px;
+}
+section > div:first-of-type > p:before {
+  font-family: "Londrina Outline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  content: "OUR BLOG";
+  position: absolute;
+  top: 50%;
+  left: -80%;
+  letter-spacing: 10px;
+  transform: translate(-50%, -50%);
+  font-size: 7rem; /* Adjust size as needed */
+  color: rgba(0, 0, 0, 0.1); /* Light color for background effect */
+  white-space: nowrap; /* Ensures text stays in one line */
+  z-index: -1;
+}
+
+section > div:first-of-type > h2 {
+  margin-top: 10px;
+  padding: 0;
+  font-size: 4rem;
+}
+
+section > div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: max-content;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+  width: 120px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #ff3838;
+  border-radius: 50px;
+}
+.card:nth-child(1):before {
+  content: "UI/UX Designer";
+}
+
+.card:nth-child(2):before {
+  content: "Web Developer";
+}
+
+.card:nth-child(3):before {
+  content: "Graphic Designer";
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card i {
+  color: #ff3838;
+}
+
+.card .blog-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 48px;
+  flex-direction: row;
+  padding: 0px 20px;
+}
+
+.card .blog-info > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .blog-content {
+  padding: 10px 20px 20px 20px;
+}
+
+.card .blog-content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  word-spacing: 5px;
+}
+
+.card .blog-content p {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.card .blog-content button {
+  padding: 0;
+  margin-bottom: 20px;
+  border: none;
+  color: #666;
+  background-color: white;
+  display: inline-block;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.card .blog-content button > i {
+  color: #666;
+}
