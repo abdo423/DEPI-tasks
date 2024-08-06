@@ -1,0 +1,191 @@
+html,
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-us {
+  text-align: center;
+  position: relative;
+}
+.contact-us h3{
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.contact-us span{
+  font-size: 2.5rem;
+  color: #ff5a6e;
+ 
+}
+.contact-us p {
+  color: #666;
+ font-size: 1.5rem;
+}
+.contact-us::after {
+content: "";
+display: block;
+position: absolute;
+left :125px;
+width: 50px;
+height: 2px;
+background-color: #ff5a6e;
+margin-top: 5px;
+
+}
+
+.contact-section {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  width: 100%;
+  align-items: center;
+}
+
+.contact-form h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.input-box {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.input-box input,
+.input-box textarea {
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+}
+
+.input-box:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Add styles for submit button */
+.input-box button {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #ff5a6e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
+/* Styles for the right part (office information) */
+
+.office-info {
+ 
+  border-radius: 8px;
+  padding: 30px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.office-info > div {
+  margin-bottom: 25px;
+}
+
+.office-info h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.office-info h3::after {
+  content: "";
+  display: block;
+  top:50px;
+  width: 400px;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: 5px;
+}
+.office-info p {
+  color: #666;
+  line-height: 1.6;
+  max-width: 175px;
+
+}
+.office-info div > div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.office-info div > div > div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+
+.office-info div > div > i{
+  color: #ff5a6e;
+  background-color: #f6f6f6;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.office-info p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Social media icons */
+.office-info div:last-child div {
+  display: flex;
+  gap: 15px;
+}
+
+.office-info .fab {
+  font-size: 24px;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.office-info .fab:hover {
+  color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .office-info {
+    padding: 20px;
+  }
+}
